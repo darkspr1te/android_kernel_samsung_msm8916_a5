@@ -1724,7 +1724,7 @@ int cyttsp5_samsung_factory_startup_attention(struct device *dev)
 	u32 touch_mode;
 	bool hover, glove;
 #endif
-	int rc;
+	int rc = 0;
 
 	if (!sfd->probe_done) {
 		pr_debug("%s: probe is not done\n", __func__);

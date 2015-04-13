@@ -25,7 +25,7 @@
 #include <linux/pinctrl/pinconf-generic.h>
 #endif
 
-static DEFINE_SPINLOCK(gpiomux_lock);
+//static DEFINE_SPINLOCK(gpiomux_lock);
 static unsigned msm_gpiomux_ngpio;
 #ifdef CONFIG_SEC_GPIO_DVS
 /****************************************************************/

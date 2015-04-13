@@ -171,7 +171,7 @@ static struct dentry *sdcardfs_d_alloc_root(struct super_block *sb)
 	if (sb) {
 		static const struct qstr name = {
 			.name = "/",
-			.len = 1
+			//.len = 1,
 		};
 
 		ret = __d_alloc(sb, &name);

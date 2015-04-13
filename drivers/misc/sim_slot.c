@@ -14,7 +14,7 @@
 static int check_simslot_count(struct seq_file *m, void *v)
 {
 	struct device_node *np;
-	int simslot_pin, retval, support_number_of_simslot;
+	int simslot_pin =0, retval, support_number_of_simslot;
 
 	for_each_compatible_node(np, NULL, "simslot")
 	simslot_pin = of_get_named_gpio_flags(np, "samsung,sim-slot", 0, NULL);

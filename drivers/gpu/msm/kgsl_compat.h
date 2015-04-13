@@ -274,12 +274,14 @@ static inline int kgsl_cmdbatch_create_compat(struct kgsl_device *device,
 			void __user *synclist, unsigned int numsyncs)
 {
 	BUG();
+	return 0;
 }
 
 static inline long kgsl_compat_ioctl(struct file *filep, unsigned int cmd,
 			unsigned long arg)
 {
 	BUG();
+	return 0;
 }
 
 static inline int adreno_getproperty_compat(struct kgsl_device *device,
@@ -287,6 +289,7 @@ static inline int adreno_getproperty_compat(struct kgsl_device *device,
 				void __user *value, size_t sizebytes)
 {
 	BUG();
+	return 0;
 }
 
 static inline int adreno_setproperty_compat(struct kgsl_device_private
@@ -294,12 +297,14 @@ static inline int adreno_setproperty_compat(struct kgsl_device_private
 				void __user *value, unsigned int sizebytes)
 {
 	BUG();
+	return 0;
 }
 
 static inline long adreno_compat_ioctl(struct kgsl_device_private *dev_priv,
 				unsigned int cmd, void *data)
 {
 	BUG();
+	return 0;
 }
 
 #endif /* CONFIG_COMPAT */
